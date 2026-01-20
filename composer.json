@@ -1,0 +1,18 @@
+{
+    "name": "morik1969/respect",
+    "description": "my project furniture shop",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Morik1969\\Respect\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "morik196911"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
