@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Morik1969\\Respect\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
