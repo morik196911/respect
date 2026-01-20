@@ -9,4 +9,4 @@ $routes = require __DIR__ . '/../src/routes.php';
 
 $uri = $_SERVER['REQUEST_URI'];
 
-App\Core\Route::run($uri, $routes);
+ App\Core\Route::run($uri, $routes);

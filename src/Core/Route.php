@@ -27,7 +27,7 @@ class Route
 		$actionName = $controllerAndAction[1];
 
 		$controller = new $controllerName();
-		echo $controller->$actionName(...$matches);
+		 $controller->$actionName(...$matches);
 	} 
 
 }//

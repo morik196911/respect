@@ -1,10 +1,12 @@
 <?php
 namespace App\Controllers;
 
-class MainController {
+use App\Core\Controller;
+
+class MainController extends Controller {
 
 	public function getContent(): string {
-		
-      return 'Hello MainController';
+
+      return '/main/index.php';
 	}
 } 
