@@ -4,3 +4,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+$routes = require __DIR__ . '/../src/routes.php';
+
+$uri = $_SERVER['REQUEST_URI'];
+
+App\Core\Route::run($uri, $routes);
