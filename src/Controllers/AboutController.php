@@ -7,6 +7,6 @@ class AboutController extends Controller {
 
 	public function getContent(): string {
 
-      return '/main/index.php';
+      return '/about/index.php';
 	}
 } 

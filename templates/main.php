@@ -13,8 +13,14 @@
 	</header>
 	<div>
 		<h4>Saidbar</h4>
-		<?php foreach($this->menu as $item): ?>
-        <p><a href="<?= $item['link'] ?>"><?= $item['name'] ?></a></p>
+		<?php foreach ($this->menu as $item): ?>
+			<p><a href="<?= $item['link'] ?>"><?= $item['name'] ?></a></p>
+		<?php endforeach; ?>
+	</div>
+	<div>
+		<h4>Category Corpus</h4>
+		<?php foreach ($this->corpus as $item): ?>
+			<p><a href="<?= $item['link'] ?>"><?= $item['name'] ?></a></p>
 		<?php endforeach; ?>
 	</div>
 	<?php include __DIR__ . $this->content ?>
