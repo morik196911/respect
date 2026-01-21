@@ -20,6 +20,8 @@
 	<?php include __DIR__ . $this->content ?>
 	<footer>
 		<h3>Foter</h3>
+		<p>VK</p>
+		<p>YouTube</p>
 	</footer>
 </body>
 
