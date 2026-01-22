@@ -14,7 +14,7 @@ class CorpusModel extends GlobalClass
 		parent::__construct('category_corpus');
 	}
 
-	public function getAllMenu()
+	public function getAllCorpus()
 	{
 		return $this->getAll();
 	}
