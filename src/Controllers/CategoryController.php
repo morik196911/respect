@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Core\Controller;
+use App\Models\ProductsModel;
 
 class CategoryController extends Controller {
 
@@ -11,11 +12,13 @@ class CategoryController extends Controller {
 		$parts = explode('/', trim($path, '/'));
 		if (isset($parts[1]) && in_array($parts[1],
 		 ['kitchens', 'livings', 'small', 'cabinets', 'hallways'])) {
-			$category = $parts[1];		
-		} 
+			$category = $parts[1];
+		}
+		$productsModel = new ProductsModel('product_' . $parts[1]);
 
+		$this->view->set('products', $productsModel->getAllProducts());
 		$this->view->set('category', $category);
-		
+
 		return '/category/index.php';
 	}
 }

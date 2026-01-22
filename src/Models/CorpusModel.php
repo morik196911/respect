@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use App\Core\GlobalClass;
-
+/*
+Работа с БД. Corpus.
+*/
 class CorpusModel extends GlobalClass
 {
 
