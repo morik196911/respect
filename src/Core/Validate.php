@@ -2,5 +2,5 @@
 namespace App\Core;
 
 class Validate {
-	
-}
+  
+}//

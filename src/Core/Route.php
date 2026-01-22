@@ -1,11 +1,10 @@
 <?php
 namespace App\Core;
 
-class Route
-{
+class Route {
 
-	public static function run($uri, $routes): void
-	{
+	public static function run($uri, $routes): void {	
+     
 		$isRouteFound = false;
 
 		foreach ($routes as $pattern => $controllerAndAction) {
@@ -18,7 +17,8 @@ class Route
 		}
 
 		if (!$isRouteFound) {
-			echo 'Page is not found';
+			//echo 'Page is not found';
+		include __DIR__ . '/../../templates/error/404.php'	;
 			return;
 		}
 		unset($matches[0]);
