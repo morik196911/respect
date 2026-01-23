@@ -22,6 +22,6 @@ class ProductsController extends Controller {
 		$this->view->set('products', $productsModel->getAllProducts());
 		$this->view->set('category', $category);
 
-		return '/category/index.php';
+		return '/products/index.php';
 	}
 }
