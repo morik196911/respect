@@ -4,7 +4,7 @@ namespace App\Controllers;
 use App\Core\Controller;
 use App\Models\ProductsModel;
 
-class CategoryController extends Controller {
+class ProductsController extends Controller {
 
 	public function getContent(): string{
 		$arrayFieldName = $this->getAllName('link');
