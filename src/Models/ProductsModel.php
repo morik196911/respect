@@ -13,9 +13,13 @@ class ProductsModel extends GlobalClass {
 		parent::__construct($table_name);
 	}
 
-	public function getAllProducts()
+	public function getAllProducts(): ?array
 	{
 		return $this->getAll();
+	}
+
+	public function getOneProduct($field_1, $value_1, $field_2, $value_2): ?array {
+		return $this->getDoubleFieldRow($field_1, $value_1, $field_2, $value_2);
 	}
 
 }//

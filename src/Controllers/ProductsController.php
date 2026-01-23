@@ -8,7 +8,7 @@ class ProductsController extends Controller {
 
 	public function getContent(): string{
 		$arrayFieldName = $this->getAllName('link');
-		// Получаем часть URL после /category/
+		// Получаем часть URL после /products/
 		$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 		$parts = explode('/', trim($path, '/'));
 		if (isset($parts[1]) && in_array($parts[1], $arrayFieldName)) {
