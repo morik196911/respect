@@ -1,6 +1,8 @@
 <?php
 namespace App\Core;
-
+/*
+ Роутер запуск
+*/
 class Route {
 
 	public static function run($uri, $routes): void {	

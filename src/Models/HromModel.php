@@ -19,4 +19,10 @@ class HromModel extends GlobalClass
 	{
 		return $this->getAll();
 	}
+
+	public function getAllFieldHrom($field): ?array
+	{
+		return $this->getField($field);
+	}
+
 }

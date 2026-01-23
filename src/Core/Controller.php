@@ -7,7 +7,9 @@ use App\Models\MenuModel;
 use App\Models\CorpusModel;
 use App\Models\SofasModel;
 use App\Models\HromModel;
-
+/*  
+Вывод главной страницы
+*/
 abstract class Controller {
 
  protected $view;
@@ -33,5 +35,18 @@ abstract class Controller {
       $this->view->set('hrom', $this->hromModel->getAllHrom());
 	  $this->view->renderHtml('main.php');
 	}
+  /* 
+   Получение названий категорий
+  */
+	protected function getAllName(string $fieldName): ?array {
+
+		$sofas = $this->sofasModel->getAllFieldSofas($fieldName) ?? [];
+		$corpus = $this->corpusModel->getAllFieldCorpus($fieldName) ?? [];
+		$hrom = $this->hromModel->getAllFieldHrom($fieldName) ?? [];
+		$combined = array_merge($sofas, $corpus, $hrom);
+		$values = array_column($combined, $fieldName);
+		return array_values(array_unique($values));
+	}
+
   abstract protected function getContent();
 }//

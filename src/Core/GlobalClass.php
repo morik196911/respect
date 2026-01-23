@@ -28,4 +28,10 @@ abstract class GlobalClass
 		$query = "SELECT * FROM " . $this->table_name . " WHERE `$field` = '$value' AND `visible` = $v ";
 		return $this->db->selectRow($query);
 	}
+	/* Выборка значений всего столбца */
+	protected function getField( $field, $v = true)
+	{
+		$query = "SELECT $field FROM " . $this->table_name . " WHERE `visible` = $v ";
+		return $this->db->select($query);
+	}
 }//

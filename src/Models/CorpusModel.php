@@ -18,4 +18,10 @@ class CorpusModel extends GlobalClass
 	{
 		return $this->getAll();
 	}
-}
+
+	public function getAllFieldCorpus($field): ?array
+	{
+		return $this->getField($field);
+	}
+	
+}//

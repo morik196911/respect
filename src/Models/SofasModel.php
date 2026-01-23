@@ -15,8 +15,12 @@ class SofasModel extends GlobalClass
 		parent::__construct('category_sofas');
 	}
 
-	public function getAllSofas()
+	public function getAllSofas(): ?array
 	{
 		return $this->getAll();
+	}
+
+	public function getAllFieldSofas($field): ?array {
+     return $this->getField($field);
 	}
 }
