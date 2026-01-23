@@ -12,7 +12,7 @@ class ProductController extends Controller {
 
 	$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 	$parts = explode('/', trim($path, '/'));
-	print_r($parts);
+	//print_r($parts);
 	 $table_name = $parts[1];
 	$field = $parts[2];
 	$id = $parts[3];
