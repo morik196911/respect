@@ -28,11 +28,14 @@ abstract class Controller {
 	  $this->format = new Format();
 	  $this->data = $this->format->sanitizeXss($_REQUEST);
       $this->view = new View(__DIR__ . '/../../templates' );
+      $this->view->set('title', $this->title ?? null);
+
 	  $this->view->set('content', $this->getContent());
       $this->view->set('menu', $this->menuModel->getAllMenu());
 	  $this->view->set('corpus', $this->corpusModel->getAllCorpus());
 	  $this->view->set('sofas', $this->sofasModel->getAllSofas()); 
       $this->view->set('hrom', $this->hromModel->getAllHrom());
+
 	  $this->view->renderHtml('main.php');
 	}
   /* 

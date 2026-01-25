@@ -1,49 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><?= $this->title ?></title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-	<header>
-		<h2>Header</h2>
-	</header>
-	<div>
-		<h4>Saidbar</h4>
-		<?php foreach ($this->menu as $item): ?>
-			<p><a href="<?= $item['link'] ?>"><?= $item['name'] ?></a></p>
-		<?php endforeach; ?>
+	<div class="grid-container">
+		<header class="header">
+			<div class="header__logo">Морозов-мебель</div>
+			<nav class="header__nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="" class="nav__link">Main</a></li>
+					<li class="nav__item"><a href="" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Eckeub</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
+				</ul>
+			</nav>
+		</header>
+		<aside class="sidebar">Сайдбар</aside>
+		<main class="content">Основной контент</main>
+		<footer class="footer">Подвал сайта</footer>
 	</div>
-	<hr />
-	<div>
-		<h4>Category Sofas</h4>
-		<?php foreach ($this->sofas as $item): ?>
-			<p><a href="/products/<?= $item['link'] ?>"><?= $item['name'] ?></a></p>
-		<?php endforeach; ?>
-	</div>
-	<div>
-		<h4>Category Corpus</h4>
-		<?php foreach ($this->corpus as $item): ?>
-			<p><a href="/products/<?= $item['link'] ?>"><?= $item['name'] ?></a></p>
-		<?php endforeach; ?>
-	</div>
-
-	<div>
-		<h4>Category Hrom</h4>
-		<?php foreach ($this->hrom as $item): ?>
-			<p><a href="/products/<?= $item['link'] ?>"><?= $item['name'] ?></a></p>
-		<?php endforeach; ?>
-	</div>
-
-	<?php include __DIR__ . $this->content ?>
-	<footer>
-		<h3>Foter</h3>
-		<p>VK</p>
-		<p>YouTube</p>
-	</footer>
 </body>
 
 </html>
