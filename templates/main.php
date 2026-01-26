@@ -14,10 +14,10 @@
 			<div class="header__logo">Морозов-мебель</div>
 			<nav class="header__nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="" class="nav__link">Main</a></li>
-					<li class="nav__item"><a href="" class="nav__link">About</a></li>
-					<li class="nav__item"><a href="" class="nav__link">Eckeub</a></li>
-					<li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
 				</ul>
 			</nav>
 		</header>
