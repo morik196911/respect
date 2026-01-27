@@ -21,7 +21,38 @@
 				</ul>
 			</nav>
 		</header>
-		<aside class="sidebar">Сайдбар</aside>
+		<aside class="sidebar">
+			<nav class="sidebar__nav">
+				<h3 class="sidebar__title">Корпусная мебель</h3>
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link">Шкафы-купе</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link">Кухонные гарнитуры</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link">Прихожие</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link">Офисная мебель</a>
+					</li>
+				</ul>
+
+				<h3 class="sidebar__title">Мягкая мебель</h3>
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link">Диваны</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link">Кресла</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link">Кушетки</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
 		<main class="content">Основной контент</main>
 		<footer class="footer">Подвал сайта</footer>
 	</div>
